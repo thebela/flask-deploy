@@ -40,12 +40,18 @@ It ensures:
 - Production-grade workflow  
 
 ## 👤 About Me
-I am **Aman Dinkar**, a B.Tech CSE student with hands-on experience in:
+I am **Aman Dinkar**, a Computer Science student with hands-on experience in:
 - Docker & Containers  
-- AWS & Cloud Infrastructure  
-- CI/CD pipelines  
-- Linux servers  
+- AWS & Cloud Hosting  
+- CI/CD automation  
+- Linux server management  
+- Backend deployment workflows
+
+📩 Contact:  
+- LinkedIn: https://www.linkedin.com/in/amandinkar37/
+- Email: amandinkar67@gmail.com
 
 I help founders and developers **deploy their applications to the cloud**.
 
 📩 Reach out on GitHub or LinkedIn if you need help deploying your app.
+
