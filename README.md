@@ -1,0 +1,51 @@
+# 🚀 Flask App – Auto Deployed with Docker & GitHub Actions
+
+This project demonstrates a **real production-style DevOps pipeline** where a Flask application is:
+
+- Containerized with Docker  
+- Hosted on AWS Lightsail  
+- Automatically deployed on every GitHub push using GitHub Actions  
+
+## 🌍 Live Demo
+👉 http://13.232.131.100
+
+## ⚙️ Tech Stack
+- Flask (Python backend)
+- Docker
+- GitHub Actions (CI/CD)
+- AWS Lightsail (Ubuntu VM)
+- Linux & SSH
+
+## 🔁 How it works
+1. Developer pushes code to GitHub  
+2. GitHub Actions connects to the Lightsail server via SSH  
+3. Latest code is pulled  
+4. Docker image is rebuilt  
+5. Old container is stopped  
+6. New container is started  
+7. Website updates automatically  
+
+## 📂 Project Structure
+app.py → Flask web app
+Dockerfile → Docker image definition
+.github/workflows → CI/CD pipeline
+
+
+## 💼 Why this matters
+This setup is exactly how modern startups deploy their backend services.  
+It ensures:
+- Zero manual deployment  
+- Fast updates  
+- Reproducible builds  
+- Production-grade workflow  
+
+## 👤 About Me
+I am **Aman Dinkar**, a B.Tech CSE student with hands-on experience in:
+- Docker & Containers  
+- AWS & Cloud Infrastructure  
+- CI/CD pipelines  
+- Linux servers  
+
+I help founders and developers **deploy their applications to the cloud**.
+
+📩 Reach out on GitHub or LinkedIn if you need help deploying your app.
