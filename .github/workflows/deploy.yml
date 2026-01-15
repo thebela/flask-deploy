@@ -1,0 +1,31 @@
+name: Auto Deploy to Lightsail
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v3
+
+      - name: Setup SSH key
+        uses: webfactory/ssh-agent@v0.6.0
+        with:
+          ssh-private-key: ${{ secrets.SSH_PRIVATE_KEY }}
+
+      - name: SSH and deploy
+        run: |
+          ssh -o StrictHostKeyChecking=no ${{ secrets.SSH_USER }}@${{ secrets.SSH_HOST }} \
+            "cd ${{ secrets.REMOTE_PATH }} && \
+            git pull origin main && \
+            docker build -t flask-app . && \
+            docker stop flask-app || true && \
+            docker rm flask-app || true && \
+            docker run -d -p 80:5001 --name flask-app flask-app"
+
+
