@@ -1,4 +1,4 @@
-# 🚀 Flask App – Auto Deployed with Docker & GitHub Actions
+# 🚀 Portfolio App – Auto Deployed with Docker & GitHub Actions
 
 This project demonstrates a **real production-style DevOps pipeline** where a Flask application is:
 
@@ -7,13 +7,13 @@ This project demonstrates a **real production-style DevOps pipeline** where a Fl
 - Automatically deployed on every GitHub push using GitHub Actions  
 
 ## 🌍 Live Demo
-👉 http://13.232.131.100
+👉 http://13.234.234.11:30007
 
 ## ⚙️ Tech Stack
 - Flask (Python backend)
 - Docker
 - GitHub Actions (CI/CD)
-- AWS Lightsail (Ubuntu VM)
+- AWS ec2
 - Linux & SSH
 
 ## 🔁 How it works
